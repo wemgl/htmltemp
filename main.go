@@ -39,7 +39,7 @@ func init() {
 	templates["add"] = template.Must(template.ParseFiles("templates/add.html", "templates/base.html"))
 	templates["edit"] = template.Must(template.ParseFiles("templates/edit.html", "templates/base.html"))
 
-	// See the noteStore with some default notes
+	// Seed the noteStore with a default note
 	noteStore = map[string]Note{
 		"0": {"text/template", "Template generates textual output", time.Now()},
 	}
